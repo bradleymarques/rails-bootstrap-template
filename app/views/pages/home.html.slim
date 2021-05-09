@@ -1,17 +1,14 @@
-.cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column
+.cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column.text-center
   header.masthead.mb-auto
-    h3.masthead-brand
-      = "Cover"
 
-
-  main.px-3.text-center
+  main.px-3
     h1 = t("app_name")
     p.lead
-      = "Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own."
+      = t("app_description")
     .d-grid.gap-2
-      = link_to("Login", "#", class: "btn btn-lg btn-primary fw-bold md-2")
-      = link_to("Register", "#", class: "btn btn-lg btn-secondary fw-bold md-2")
+      = link_to(t("login"), "#", class: "btn btn-lg btn-primary fw-bold md-2")
+      = link_to(t("register"), "#", class: "btn btn-lg btn-secondary fw-bold md-2")
 
-  footer.mt-auto.text-muted.text-center
+  footer.mt-auto.text-muted
     p
       = "Some footer text"
