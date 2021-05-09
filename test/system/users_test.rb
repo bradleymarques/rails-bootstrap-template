@@ -1,7 +1,7 @@
 require "test_helper"
 require "application_system_test_case"
 
-class RegisterTest < ApplicationSystemTestCase
+class UsersTest < ApplicationSystemTestCase
   test "a user can visit the root URL, click register and create an account" do
     visit(root_url)
     register_buttons = page.find_all("a", text: I18n.t("register"))

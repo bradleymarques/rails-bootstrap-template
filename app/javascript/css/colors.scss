@@ -62,7 +62,7 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       $pink !default;
+$primary:       $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -84,5 +84,17 @@ $theme-colors: (
   "dark":       $dark
 ) !default;
 
+// Overall body
+
 $body-bg: $gray-900;
 $body-color: $gray-200;
+
+// Toasts
+
+// scss-docs-start toast-variables
+$toast-background-color:            rgba($body-bg, .85) !default;
+$toast-border-color:                rgba(0, 0, 0, .1) !default;
+
+$toast-header-color:                $gray-600 !default;
+$toast-header-background-color:     rgba($body-bg, .85) !default;
+$toast-header-border-color:         rgba(0, 0, 0, .05) !default;
