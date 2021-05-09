@@ -10,5 +10,8 @@
       = link_to(t("register"), "#", class: "btn btn-lg btn-secondary fw-bold md-2")
 
   footer.mt-auto.text-muted
-    p
-      = "Some footer text"
+    .row
+      .col
+        = link_to(t("home.github"), "https://github.com/bradleymarques/rails-bootstrap-template", class: "text-muted text-decoration-none")
+      .col
+        = link_to(t("home.license"), "https://github.com/bradleymarques/rails-bootstrap-template/blob/main/LICENSE", class: "text-muted text-decoration-none")
