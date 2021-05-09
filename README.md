@@ -1,5 +1,9 @@
 # README
 
+[![CI](https://github.com/bradleymarques/rails-bootstrap-template/actions/workflows/ci.yml/badge.svg)](https://github.com/bradleymarques/rails-bootstrap-template/actions/workflows/ci.yml)
+
+[![codecov](https://codecov.io/gh/bradleymarques/rails-bootstrap-template/branch/main/graph/badge.svg?token=SA2MBENVA5)](https://codecov.io/gh/bradleymarques/rails-bootstrap-template)
+
 ## Introduction
 
 This is a template repository using the following:
