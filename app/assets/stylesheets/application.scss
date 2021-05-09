@@ -1,9 +1,20 @@
 $body-bg: #1b1b1b;
 $body-color: #d8d8d8;
 
+$primary: #f6019d;
+
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
 
 .cover-container {
   max-width: 42em;
+}
+
+.nav-masthead a {
+  color: $gray-600;
+}
+
+.nav-masthead .active {
+  color: $primary;
+  border-bottom: 1px solid $primary;
 }

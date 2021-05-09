@@ -1,17 +1,12 @@
 .cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column.text-center
-  header.masthead.mb-auto
+  = render(partial: "pages/pages_navigation", locals: { home_active: true })
 
   main.px-3
     h1 = t("app_name")
     p.lead
       = t("app_description")
     .d-grid.gap-2
-      = link_to(t("login"), "#", class: "btn btn-lg btn-primary fw-bold md-2")
-      = link_to(t("register"), "#", class: "btn btn-lg btn-secondary fw-bold md-2")
+      = link_to(t("login"), new_user_session_path, class: "btn btn-lg btn-primary fw-bold md-2")
+      = link_to(t("register"), new_user_registration_path, class: "btn btn-lg btn-outline-primary fw-bold md-2")
 
-  footer.mt-auto.text-muted
-    .row
-      .col
-        = link_to(t("home.github"), "https://github.com/bradleymarques/rails-bootstrap-template", class: "text-muted text-decoration-none")
-      .col
-        = link_to(t("home.license"), "https://github.com/bradleymarques/rails-bootstrap-template/blob/main/LICENSE", class: "text-muted text-decoration-none")
+  = render(partial: "pages/pages_footer")

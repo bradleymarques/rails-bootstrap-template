@@ -1,0 +1,9 @@
+- home_active ||= false
+- login_active ||= false
+- register_active ||= false
+
+header.masthead.mb-auto
+  nav.nav.nav-masthead.justify-content-center
+    = link_to(t("home"), root_path, class: home_active ? "fw-bold nav-link active" : "fw-bold nav-link")
+    = link_to(t("login"), new_user_session_path, class: login_active ? "fw-bold nav-link active" : "fw-bold nav-link")
+    = link_to(t("register"), new_user_registration_path, class: register_active ? "fw-bold nav-link active" : "fw-bold nav-link")
