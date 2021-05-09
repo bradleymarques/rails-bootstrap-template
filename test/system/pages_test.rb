@@ -14,12 +14,7 @@ class PagesTest < ApplicationSystemTestCase
 
   test "a user can visit the root URL and see a link to GitHub" do
     visit(root_url)
-    assert_selector("a", text: I18n.t("home.github"))
-  end
-
-  test "a user can visit the root URL and see a link to the software license" do
-    visit(root_url)
-    assert_selector("a", text: I18n.t("home.license"))
+    assert_selector("a", text: I18n.t("github"))
   end
 
   test "a user can visit the root URL and see a link to login" do
