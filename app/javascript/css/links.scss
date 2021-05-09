@@ -7,3 +7,12 @@ a:hover {
   color: darken($primary, 20%);
   transition: 0.2s;
 }
+
+.nav-item a {
+  color: $white;
+}
+
+.nav-item a:hover {
+  color: $gray-500;
+  transition: 0.2s;
+}

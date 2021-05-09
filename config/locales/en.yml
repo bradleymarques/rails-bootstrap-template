@@ -4,4 +4,5 @@ en:
   login: "Log in"
   register: "Register"
   home: "Home"
+  dashboard: "Dashboard"
   github: "GitHub"
