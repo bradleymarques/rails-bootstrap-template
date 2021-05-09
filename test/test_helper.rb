@@ -1,6 +1,7 @@
 ENV["RAILS_ENV"] ||= "test"
 require_relative "../config/environment"
 require "rails/test_help"
+require 'faker'
 
 module ActiveSupport
   class TestCase
@@ -11,5 +12,13 @@ module ActiveSupport
     fixtures :all
 
     # Add more helper methods to be used by all tests here...
+  end
+end
+
+module Test
+  module Unit
+    class TestCase
+      include FactoryBot::Syntax::Methods
+    end
   end
 end

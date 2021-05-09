@@ -1,0 +1,12 @@
+.form-control {
+  color: $body-color;
+  background-color: lighten($body-bg, 10%);
+  border-color: $body-color;
+}
+
+.form-control:focus {
+  color: $body-color;
+  background-color: lighten($body-bg, 30%);
+  border-color: $primary;
+  transition: 0.2s;
+}
