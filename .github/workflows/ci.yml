@@ -73,5 +73,3 @@ jobs:
 
       - name: Code coverage
         uses: codecov/codecov-action@v1
-        with:
-          verbose: true # optional (default = false)

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  get "license", to: "pages#license"
+  devise_for :users
+  get "dashboard", to: "dashboards#show"
   root to: "pages#home"
 end

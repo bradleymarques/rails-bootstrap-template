@@ -1,8 +1,8 @@
 en:
   app_name: "Ruby on Rails Bootstrap Template"
   app_description: "A Ruby on Rails template using Bootstrap CSS, Postgres, and Devise, and setup with GitHub Actions for CI."
-  login: "Login"
+  login: "Log in"
   register: "Register"
-  home:
-    github: "GitHub"
-    license: "License"
+  home: "Home"
+  dashboard: "Dashboard"
+  github: "GitHub"
