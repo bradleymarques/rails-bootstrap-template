@@ -1,0 +1,14 @@
+div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;"
+  div style="position: absolute; top: 0; right: 0;"
+    .toast role="alert" aria-live="assertive" aria-atomic="true"
+      .toast-header
+        / <img src="..." class="rounded mr-2" alt="...">
+        strong.mr-auto
+          = "Bootstrap"
+        small.text-muted
+          = "just now"
+        button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close"
+          span aria-hidden="true"
+            = "x"
+      div class="toast-body"
+        = "See? Just like this."
